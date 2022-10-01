@@ -1,5 +1,6 @@
 var result = "Loading"
 var accuracy = 0
+var direct = 0
 var steps = 0
 var arrow = 5
 var x = 2
@@ -26,10 +27,13 @@ while (ExpantaNum.neq(ExpantaNum.div((ExpantaNum.add(a,b)),2),c)) {
 
 result = c
 
+direct = ExpantaNum.arrow(y,arrow,ExpantaNum.div(1,x))
+
 accuracy = ExpantaNum.sub(y,ExpantaNum.arrow(c,arrow,x))
 
 window.setInterval(function() {
     document.getElementById("result").innerHTML = result
     document.getElementById("steps").innerHTML = steps
     document.getElementById("accuracy").innerHTML = accuracy
+    document.getElementById("direct").innerHTML = direct
 },50)
