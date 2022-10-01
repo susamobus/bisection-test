@@ -7,8 +7,13 @@ body {
 .RunButton {
     background-color: blue;
     color: white;
-    padding: 10px;
     border-radius: 10px;
-    height: 50px;
-    width: 120px;
+    height: 30px;
+    width: 200px;
+}
+
+.input {
+    background-color: black;
+    border-color: white;
+    color: white;
 }
