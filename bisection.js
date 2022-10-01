@@ -2,9 +2,11 @@ var result = "Loading"
 var accuracy = 0
 var direct = 0
 var steps = 0
-var arrow = 2
-var x = 2
-var y = 3
+var arrow = document.getElementById("arrow").value
+var x = document.getElementById("x").value
+var y = document.getElementById("y").value
+
+function Run(x,y,arrow) {
 var a = ExpantaNum.div(y,2)
 
 while (ExpantaNum.gt(ExpantaNum.arrow(a,arrow,x),y)) {
@@ -31,9 +33,8 @@ direct = ExpantaNum.arrow(y,arrow,ExpantaNum.div(1,x))
 
 accuracy = ExpantaNum.sub(y,ExpantaNum.arrow(c,arrow,x))
 
-window.setInterval(function() {
-    document.getElementById("result").innerHTML = result
-    document.getElementById("steps").innerHTML = steps
-    document.getElementById("accuracy").innerHTML = accuracy
-    document.getElementById("direct").innerHTML = direct
-},50)
+document.getElementById("result").innerHTML = result
+document.getElementById("steps").innerHTML = steps
+document.getElementById("accuracy").innerHTML = accuracy
+document.getElementById("direct").innerHTML = direct
+}
