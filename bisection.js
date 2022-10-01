@@ -2,9 +2,9 @@ var result = "Loading"
 var accuracy = 0
 var direct = 0
 var steps = 0
-var arrow = 5
+var arrow = 2
 var x = 2
-var y = 2
+var y = 3
 var a = ExpantaNum.div(y,2)
 
 while (ExpantaNum.gt(ExpantaNum.arrow(a,arrow,x),y)) {
