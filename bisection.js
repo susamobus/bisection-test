@@ -1,3 +1,5 @@
+
+function Run(x,y,arrow) {
 var result = "Loading"
 var accuracy = 0
 var direct = 0
@@ -6,7 +8,6 @@ var arrow = document.getElementById("arrow").value
 var x = document.getElementById("x").value
 var y = document.getElementById("y").value
 
-function Run(x,y,arrow) {
 var a = ExpantaNum.div(y,2)
 
 while (ExpantaNum.gt(ExpantaNum.arrow(a,arrow,x),y)) {
