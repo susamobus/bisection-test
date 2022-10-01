@@ -38,7 +38,7 @@ accuracy = ExpantaNum.sub(y,ExpantaNum.arrow(c,arrow,x))
 
 remainder = ExpantaNum.sub(y,ExpantaNum.arrow((ExpantaNum.floor(result)),arrow,x))
 
-next = ExpantaNum.sub(ExpantaNum.arrow((ExpantaNum.ceil(result)),arrow-1,x),y)
+next = ExpantaNum.sub(ExpantaNum.arrow((ExpantaNum.ceil(result)),arrow,x),y)
 
 document.getElementById("iny").innerHTML = y
 document.getElementById("inarrow").innerHTML = arrow
