@@ -39,6 +39,6 @@ document.getElementById("inarrow").innerHTML = arrow
 document.getElementById("inx").innerHTML = x
 document.getElementById("result").innerHTML = result
 document.getElementById("steps").innerHTML = steps
-document.getElementById("accuracy").innerHTML = accuracy
+document.getElementById("inaccuracy").innerHTML = accuracy
 document.getElementById("direct").innerHTML = direct
 }
