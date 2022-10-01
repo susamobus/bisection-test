@@ -8,10 +8,11 @@ var a = ExpantaNum.div(y,2)
 while (ExpantaNum.gt(ExpantaNum.arrow(a,arrow,x),y)) {
     steps = steps + 1
     a = ExpantaNum.div(a,2)
-}
+};
 
 var b = ExpantaNum.mul(a,2)
 var c = a
+
 while (ExpantaNum.neq(ExpantaNum.div((ExpantaNum.add(a,b)),2),c)) {
     c = ExpantaNum.div((ExpantaNum.add(a,b)),2)
     steps = steps + 1
@@ -20,7 +21,8 @@ while (ExpantaNum.neq(ExpantaNum.div((ExpantaNum.add(a,b)),2),c)) {
     } else {
         b = c
     }
-}
+};
+
 result = c
 
 window.setInterval(function() {
