@@ -22,5 +22,8 @@ while (ExpantaNum.neq(ExpantaNum.div((ExpantaNum.add(a,b)),2),c)) {
     }
 }
 result = c
-document.getElementById("result").innerHTML = result
-document.getElementById("steps").innerHTML = steps
+
+window.setInterval(function() {
+    document.getElementById("result").innerHTML = result
+    document.getElementById("steps").innerHTML = steps
+},50)
