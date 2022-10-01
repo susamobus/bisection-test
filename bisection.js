@@ -21,6 +21,6 @@ while (ExpantaNum.neq(ExpantaNum.div((ExpantaNum.add(a,b)),2),c)) {
         b = c
     }
 }
-
+result = c
 document.getElementById("result").innerHTML = result
 document.getElementById("steps").innerHTML = steps
