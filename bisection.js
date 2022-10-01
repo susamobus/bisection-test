@@ -1,5 +1,5 @@
 var result = "Loading"
-var check = "False"
+var accuracy = 0
 var steps = 0
 var arrow = 2
 var x = 2
@@ -26,12 +26,10 @@ while (ExpantaNum.neq(ExpantaNum.div((ExpantaNum.add(a,b)),2),c)) {
 
 result = c
 
-if (ExpantaNum.eq(ExpantaNum.arrow(result,arrow,x),y)) {
-    check = "True"
-}
+accuracy = ExpantaNum.sub(y,ExpantaNum.arrow(c,arrow,x))
 
 window.setInterval(function() {
     document.getElementById("result").innerHTML = result
     document.getElementById("steps").innerHTML = steps
-    document.getElementById("check").innerHTML = check
+    document.getElementById("accuracy").innerHTML = accuracy
 },50)
