@@ -36,9 +36,10 @@ direct = ExpantaNum.arrow(y,arrow,ExpantaNum.div(1,x))
 
 accuracy = ExpantaNum.sub(y,ExpantaNum.arrow(c,arrow,x))
 
-remainder = ExpantaNum.sub(y,ExpantaNum.arrow(x,arrow,(ExpantaNum.floor(result))))
 
-next = ExpantaNum.sub(ExpantaNum.arrow(x,arrow,(ExpantaNum.ceil(result))),y)
+remainder = ExpantaNum.sub(y,ExpantaNum.arrow(x,(arrow-1),(ExpantaNum.floor(result))))
+
+next = ExpantaNum.sub(ExpantaNum.arrow(x,(arrow-1),(ExpantaNum.ceil(result))),y)
 
 document.getElementById("iny").innerHTML = y
 document.getElementById("inarrow").innerHTML = arrow
