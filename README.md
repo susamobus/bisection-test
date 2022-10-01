@@ -1,2 +1,2 @@
 # bisection-test
-A calculator used to calculate frational hyperoperators using the bisection method
+A calculator used to calculate fractional hyperoperators using the bisection method
