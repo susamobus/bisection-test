@@ -1,4 +1,5 @@
 var result = "Loading"
+var check = "False"
 var steps = 0
 var arrow = 2
 var x = 2
@@ -25,7 +26,12 @@ while (ExpantaNum.neq(ExpantaNum.div((ExpantaNum.add(a,b)),2),c)) {
 
 result = c
 
+if (ExpantaNum.eq(ExpantaNum.arrow(result,arrow,x),y)) {
+    check = "True"
+}
+
 window.setInterval(function() {
     document.getElementById("result").innerHTML = result
     document.getElementById("steps").innerHTML = steps
+    document.getElementById("check").innerHTML = check
 },50)
