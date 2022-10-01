@@ -32,7 +32,7 @@ result = c
 
 direct = ExpantaNum.arrow(y,arrow,ExpantaNum.div(1,x))
 
-accuracy = ExpantaNum.round(ExpantaNum.sub(y,ExpantaNum.arrow(c,arrow,x)))
+accuracy = ExpantaNum.sub(y,ExpantaNum.arrow(c,arrow,x))
 
 document.getElementById("iny").innerHTML = y
 document.getElementById("inarrow").innerHTML = arrow
