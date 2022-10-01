@@ -4,6 +4,8 @@ var result = "Loading"
 var accuracy = 0
 var direct = 0
 var steps = 0
+var remainder = 0
+var next = 0
 var arrow = document.getElementById("arrow").value
 var x = document.getElementById("x").value
 var y = document.getElementById("y").value
@@ -34,6 +36,10 @@ direct = ExpantaNum.arrow(y,arrow,ExpantaNum.div(1,x))
 
 accuracy = ExpantaNum.sub(y,ExpantaNum.arrow(c,arrow,x))
 
+remainder = ExpantaNum.sub(y,ExpantaNum.arrow((ExpantaNum.floor(result)),arrow,x))
+
+next = ExpantaNum.sub(ExpantaNum.arrow((ExpantaNum.ceil(result)),arrow,x),y)
+
 document.getElementById("iny").innerHTML = y
 document.getElementById("inarrow").innerHTML = arrow
 document.getElementById("inx").innerHTML = x
@@ -42,5 +48,7 @@ document.getElementById("inx2").innerHTML = x
 document.getElementById("result").innerHTML = result
 document.getElementById("steps").innerHTML = steps
 document.getElementById("inaccuracy").innerHTML = accuracy
+document.getElementById("remainder").innerHTML = remainder
+document.getElementById("next").innerHTML = next
 document.getElementById("direct").innerHTML = direct
 }
