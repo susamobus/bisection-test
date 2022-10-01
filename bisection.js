@@ -34,6 +34,7 @@ direct = ExpantaNum.arrow(y,arrow,ExpantaNum.div(1,x))
 
 accuracy = ExpantaNum.sub(y,ExpantaNum.arrow(c,arrow,x))
 
+document.getElementById("input").innerHTML = ""+""
 document.getElementById("result").innerHTML = result
 document.getElementById("steps").innerHTML = steps
 document.getElementById("accuracy").innerHTML = accuracy
