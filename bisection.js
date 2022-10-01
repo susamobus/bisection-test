@@ -5,7 +5,7 @@ var x = 2
 var y = 2
 var a = ExpantaNum.div(y,2)
 
-while (ExpantaNum.gt(ExpantaNum.arrow(x,arrow,y),y)) {
+while (ExpantaNum.gt(ExpantaNum.arrow(a,arrow,x),y)) {
     steps = steps + 1
     a = ExpantaNum.div(a,2)
 }
